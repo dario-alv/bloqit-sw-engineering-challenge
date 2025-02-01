@@ -103,7 +103,7 @@ class Locker(Model):
 
     id = UUIDField(primary_key=True, auto_created=True, default=uuid4, editable=False)
     bloqId = ForeignKey(Bloq, on_delete=CASCADE)
-    status = CharField(max_length=12, choices=LockerStatus.choices)
+    status = CharField(max_length=12, default=LockerStatus.CLOSED, choices=LockerStatus.choices)
     isOccupied = BooleanField(default=False)
 
     def __str__(self):

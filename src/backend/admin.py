@@ -42,6 +42,7 @@ class BloqAdmin(ModelAdmin):
     ordering = ['id']
     search_fields = ['title', 'address']
 
+    readonly_fields = ['id']
     fieldsets = (
         (None, {
             'fields': ('id', 'title', 'address')
@@ -69,9 +70,10 @@ class LockerAdmin(ModelAdmin):
     search_fields = ['title', 'status']
     list_filter = ['status', 'isOccupied']
 
+    readonly_fields = ['id']
     fieldsets = (
         (None, {
-            'fields': ('id', 'bloqId', 'address', 'isOccupied')
+            'fields': ('id', 'bloqId', 'status', 'isOccupied')
         }),
     )
 
