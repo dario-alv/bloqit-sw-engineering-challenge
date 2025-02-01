@@ -1,0 +1,159 @@
+# Python
+*.egg
+.installed.cfg
+MANIFEST
+*.manifest
+pip-log.txt
+*.pyc
+*.py[cod]
+.Python
+*$py.class
+*.spec
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+lib/
+lib64/
+out/
+parts/
+pip-wheel-metadata/
+python-wheels/
+sdist/
+target/
+var/
+wheels/
+__pycache__/
+__pypackages__/
+
+# Environments
+.env
+!.env.template
+pipenv
+.python-version
+.venv
+venv/
+venv*/
+venv.bak/
+
+# C
+*.so
+
+# Node
+node_modules/
+
+# Databases
+db_backup/*
+db.sqlite3
+db.sqlite3-journal
+*.bak
+
+# Cache
+*.cache
+
+# Flask
+instance/
+.webassets-cache
+
+# Celery
+celerybeat-schedule
+celerybeat-schedule.*
+celerybeat.pid
+
+# Control
+Control.last-run
+Control.ca-list
+Control.ca-bundle
+Control.system-ca-bundle
+
+# Sftp
+sftp-config.json
+
+# Unit test / Coverage
+*.cover
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+htmlcov/
+.hypothesis/
+.nox/
+.pytest_cache/
+.tox/
+
+# Sphinx
+docs/_build/
+
+# Mkdocs
+/site
+
+# Scrapy
+.scrapy
+
+# Jupyter
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Static Files
+static/*
+staticfiles/*
+
+# Media
+media/
+mediafiles/
+*.jpg
+*.png
+
+# Translations
+locale/
+*.po
+*.mo
+*.pot
+
+# Certs
+*firebase-cert.json
+
+# Logger
+*.log
+
+# Vagrant
+.vagrant
+
+# Pyre
+.pyre/
+
+# Mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Rope project settings
+.ropeproject
+
+# PyCharm
+.idea/
+*.iws
+
+# Visual Studio Code
+*.code-workspace
+.vscode/*
+.history
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+GitHub.sublime-settings
+
+# Spyder
+.spyderproject
+.spyproject
+
+# SageMath
+*.sage.py
