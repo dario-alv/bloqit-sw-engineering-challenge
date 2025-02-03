@@ -113,10 +113,10 @@ class Locker(Model):
 class Rent(Model):
 
     id = UUIDField(primary_key=True, auto_created=True, default=uuid4, editable=False)
-    lockerId = ForeignKey(Locker, on_delete=CASCADE)
+    lockerId = ForeignKey(Locker, null=True, on_delete=CASCADE)
     weight = IntegerField(default=0)
     size = CharField(max_length=3, choices=RentSize.choices)
-    status = CharField(max_length=18, choices=RentStatus.choices)
+    status = CharField(max_length=18, default=RentStatus.CREATED, choices=RentStatus.choices)
 
     def __str__(self):
         return f'{self.id}'

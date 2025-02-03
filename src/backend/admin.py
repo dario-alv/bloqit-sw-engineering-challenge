@@ -32,7 +32,7 @@ class BloqitUserUserAdmin(UserAdmin):
         return False
 
     def has_delete_permission(self, request, obj=None):
-        return False
+        return True
 
 
 @register(Bloq)
@@ -56,10 +56,10 @@ class BloqAdmin(ModelAdmin):
         return True
 
     def has_change_permission(self, request, obj=None):
-        return False
+        return True
 
     def has_delete_permission(self, request, obj=None):
-        return False
+        return True
 
 
 @register(Locker)
@@ -84,10 +84,10 @@ class LockerAdmin(ModelAdmin):
         return True
 
     def has_change_permission(self, request, obj=None):
-        return False
+        return True
 
     def has_delete_permission(self, request, obj=None):
-        return False
+        return True
 
 
 @register(Rent)

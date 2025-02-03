@@ -301,11 +301,10 @@ SPECTACULAR_SETTINGS = {
     }
 }
 
-# TODO: move this out of the settings?
 # Dev note: missing here (as these are out of scope for the challenge): 
 #   1. the setup for HTTPS_ONLY in a production environment.
-#   2. Logging setup (I left it to the default django logging setup, which is pretty good anyways tbh). 
+#   2. Logging setup (I left it to the default django logging setup. 
 #   3. Setup for emails so that bugs and error logs in production environments trigger emails to the developer(s).
 #   4. Celery setup (not requested at all).
-#   5. Redis / Memcached setup (was already at the suggested time limit by the time I could have added these).
+#   5. Redis / Memcached setup (left it as local memory caching)
 #   6. Static and Media file setup (STATIC_ROOT, MEDIA_ROOT, MEDIA_URL, etc)

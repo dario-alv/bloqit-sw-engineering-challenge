@@ -59,3 +59,11 @@ class LoginSerializer(ModelSerializer):
             return authenticated_account
 
         raise AuthenticationFailed
+
+
+class LogoutSerializer(ModelSerializer):
+
+    class Meta:
+        model = user_model
+        fields = []
+        read_only_fields =  []

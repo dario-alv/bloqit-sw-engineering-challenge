@@ -17,7 +17,7 @@
   },
   {
     "model": "backend.bloq",
-    "id": "22ffa3c5-3a3d-4f71-81f1-cac18ffbc510",
+    "pk": "22ffa3c5-3a3d-4f71-81f1-cac18ffbc510",
     "fields": {
         "title": "Bluberry Regent Street",
         "address": "121 Regent St, Mayfair, London W1B 4TB, United Kingdom"

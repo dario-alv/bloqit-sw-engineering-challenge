@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.status import HTTP_204_NO_CONTENT 
 from rest_framework.permissions import AllowAny
 
-from backend.serializers.user import UserRegistrationSerializer, LoginSerializer
+from backend.serializers.user import UserRegistrationSerializer, LoginSerializer, LogoutSerializer
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +27,8 @@ class LoginView(CreateAPIView):
 
 class LogoutView(CreateAPIView):
 
+    serializer_class = LogoutSerializer
+    
     def post(self, request, *args, **kwargs):
         request.user.revoke_token()
         logout(request)
